@@ -28,4 +28,11 @@ by performing the following:
      - Appropriately labels the data set with descriptive variable names. 
      - Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
      - Writes the tidy data set out to a file called "tidyData.txt"
+     
+### Tidy Dataset Output
+
+The tidy data set prepared by this repository's "run_analysis.R" script
+is written to an output file called "tidyData.txt" in the "UCI HAR Dataset"
+directory within the current working directory.
+
 
