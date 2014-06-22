@@ -1,20 +1,13 @@
 # run_analysis.R
 
-#submit:
-# 1) a tidy data set as described below
-# 2) a link to a github repository with your script for performing the analysis (https://github.com/pwlerke/CleaningDataProject)
-# 3) a code book that describes the variables, the data, and any transformations or work performed to clean up the data.
+# This R script does the following:
 
-# You should also include a README.md in the repo with your scripts.
-# This repo explains how all of the scripts work and how they are connected.  
-
-# create one R script called run_analysis.R that does the following:
-
-# Merges the training and the test sets to create one data set.
+# Merges the training and the test sets in the UCI HAR Dataset to create one data set.
 # Extracts only the measurements on the mean and standard deviation for each measurement. 
 # Uses descriptive activity names to name the activities in the data set
 # Appropriately labels the data set with descriptive variable names. 
 # Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+# Writes the tidy data set out to a file
 
 ######################################################################
 # Load the activity labels
@@ -93,9 +86,6 @@ trainData <- merge(x = activities, y = trainData, by.x="activityId", by.y="activ
 
 # Remove the first column (contains the activityId, which we no longer need)
 trainData <- trainData[,-1]
-
-#head(trainData, n=5)
-
 
 
 ###################################################################################################
