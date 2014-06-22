@@ -22,10 +22,10 @@ raw data in a directory, within the current working directory, called
 The "run_analysis.R" script in this repository constructs a tidy dataset
 by performing the following:
 
-     Merges the training and the test sets in the UCI HAR Dataset to create one data set.
-     Extracts only the measurements on the mean and standard deviation for each measurement. 
-     Uses descriptive activity names to name the activities in the data set
-     Appropriately labels the data set with descriptive variable names. 
-     Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-     Writes the tidy data set out to a file called "tidyData.txt"
+     - Merges the training and the test sets in the UCI HAR Dataset to create one data set.
+     - Extracts only the measurements on the mean and standard deviation for each measurement. 
+     - Uses descriptive activity names to name the activities in the data set
+     - Appropriately labels the data set with descriptive variable names. 
+     - Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+     - Writes the tidy data set out to a file called "tidyData.txt"
 
