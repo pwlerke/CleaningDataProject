@@ -121,7 +121,7 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-# Preparation of Tidy Summary Data
+# Preparation of Summary Data Output
 
 An R script (run_analysis.R) has been written to prepare and summarize the raw data for
 subsequent analysis.  This script assumes the presence of the raw data in a directory,
@@ -129,19 +129,19 @@ within the current working directory, called "UC HAR Dataset".
 
 The "run_analysis.R" script constructs a tidy summary dataset which contains the average
 of each mean and standard deviation, for each measurement, calculated for each activity
-and subject combination.  It performs the following steps:
-
-     - Merges the training and the test sets in the UCI HAR Dataset to create one data set.
-     - Extracts only the measurements on the mean and standard deviation for each measurement. 
-     - Uses descriptive activity names to name the activities in the data set
-     - Appropriately labels the data set with descriptive variable names. 
-     - Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+and subject combination.  It performs the following general steps, which are detailed in the
+script's embedded comments:
+- Merges the training and the test sets in the UCI HAR Dataset to create one data set.
+- Extracts only the measurements on the mean and standard deviation for each measurement. 
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive variable names. 
+- Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 The script then writes the tidy data set out to a file called "tidyData.txt"  This resulting file is a
 table consisting of tab-delimited fields within each row.  Each row contains the following fields:
-     - "subject": The identifier of the subject to which this row applies
-     - "activity": A text name for the activity being conducted when the measurements summarized by this row were observed
-     - "measurement": A descriptive name of the measurement being summarized
-     - "average_value": The average (mean) of the values for the referenced measurement, for the subject and activity combination identified in this row
+- "subject": The identifier of the subject to which this row applies
+- "activity": A text name for the activity being conducted when the measurements summarized by this row were observed
+- "measurement": A descriptive name of the measurement being summarized
+- "average_value": The average (mean) of the values for the referenced measurement, for the subject and activity combination identified in this row
 
      
